@@ -96,5 +96,17 @@ public class utils {
 			}
 		});
 	}
+	
+	public static Double tryParseToDouble(String str) {
+
+		try {
+
+			return Double.parseDouble(str);
+
+		} catch (NumberFormatException error) {
+
+			return null;
+		}
+	}
 
 }
